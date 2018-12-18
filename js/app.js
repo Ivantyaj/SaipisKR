@@ -1,6 +1,6 @@
-require(['hist', 'jquery-3.1.1.min'], function (hist, $) {
-    hist();
-}); //запуск функций зависящих от модулей(загр скриптов)
+require(['clear', 'jquery-3.1.1.min'], function (clear, $) {
+    clear();
+});
 
 require(['tableIn', 'jquery-3.1.1.min'], function (tableIn, $) {
     tableIn();
