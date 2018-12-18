@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="..\style\menuStyle.css">
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/readJson.js" type="text/javascript"></script>
+    <script src="../js/clickBind.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="..\style\logoStyle.css">
+	<link rel="stylesheet" type="text/css" href="..\style\footerStyle.css">
+	<link rel="stylesheet" type="text/css" href="..\style\galerStyle.css">
+    <link rel="stylesheet" type="text/css" href="..\style\bg.css">
+    <link rel="stylesheet" type="text/css" href="..\style\text.css">
+	<link href="..\style\bootstrap.min.css" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <style type="text/css">
+        #featured { width: 940px; height: 450px; background: #009cff no-repeat center center; overflow: hidden; }
+    </style>
+    <link rel="stylesheet" href="resource\orbit\orbit.css">
+    <style type="text/css">
+        .timer { display: none !important; }
+        div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+    </style>
+    <script type="text/javascript" src="resource/orbit/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="resource/orbit/jquery.orbit.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#featured').orbit({
+                'bullets': true,
+                'timer' : true,
+                'animation' : 'horizontal-slide'
+            });
+        });
+    </script>
+
+</head>
+<body>
+<header id="logo">
+    <p>ღ ღ ღ Галерея ღ ღ ღ</p>
+<nav>
+    <ul class="menu">
+        <li><a href=..>Главная</a>
+        </li>
+    </ul>
+</nav>
+</header>
+<div class="bodyCat">
+    <div id="featured" style="left: 13%;">
+        <img width="900" height="400" src="resource/orbit/link.jpg" alt="Link" />
+        <img width="900" height="400" src="resource/orbit/catbad.jpg" alt="catic" />
+        <img width="900" height="400" src="resource/orbit/wintercat.jpg"  alt="wintercat"/>
+        <img width="900" height="400" src="resource/orbit/cati.jpeg" alt="cati" />
+        <img width="900" height="400" src="resource/orbit/1.jpg" alt="cati" />
+    </div>
+    <br><br>
+
+<table id="galerImg" >
+    <tr>
+        <td style="padding-bottom:5px; padding-left: 100px"><img height="220px" width="300" src="../resource/cats/cat1.jpg" alt="cat1"></td>
+        <td><img width="300" height="220px" src="../resource/cats/cat2.jpeg" alt="cat2"></td>
+        <td><img width="300" height="220px" src="../resource/cats/cat3.jpg" alt="cat3"></td>
+    </tr>
+    <tr>
+        <td style="padding-left: 100px"><img width="300" height="220px" src="../resource/cats/cat4.jpg" alt="cat4"></td>
+        <td><img width="300" height="220px" src="../resource/cats/cat5.jpg" alt="cat5"></td>
+        <td><img width="300" height="220px" src="../resource/cats/cat6.jpeg" alt="cat6"></td>
+    </tr>
+</table>
+</div>
+<footer><a href="https://www.instagram.com/mi_mi_zoo/">INSTAGRAM</a></footer>
+</body>
+</html>

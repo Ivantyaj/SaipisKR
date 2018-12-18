@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="..\style\menuStyle.css">
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="..\style\logoStyle.css">
+		<link rel="stylesheet" type="text/css" href="..\style\footerStyle.css">
+		<link rel="stylesheet" type="text/css" href="..\style\bg.css">
+		<link href="..\style\bootstrap.min.css" rel="stylesheet">
+	</head>
+<body>
+<header id="logo" style="padding-top: 15px">
+	<p>Авторизация</p>
+</header>
+
+<div class="bodyCat" style=" text-indent: 0em; padding-bottom: 268px; padding-top:170px; padding-left: 30%;padding-right: 30%;">
+	<form action="/auth" method="post">Логин:<br>
+		<input type="login" class="form-control" placeholder="Введите ваш логин..." id="amount" name="login" size=30>
+		<br>Пароль:<br>
+		<input type="password" class="form-control" placeholder="Введите ваш пароль..." id="amount" name="password" size=30><br>
+		<input type="submit" class="btn btn-primary" id="send_button" name="execute" value="Войти">
+	</form>
+</div>
+<footer><a href=..>Главная</a></footer>
+</body>
+</html>

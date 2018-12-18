@@ -1,0 +1,54 @@
+.tableIns
+{
+	padding-left: 30%;
+}
+
+table
+{
+	position: relative;
+	border-collapse: collapse;
+}
+
+#porod
+{
+	display: none;
+}
+
+#porod td
+{
+	border: 1px solid black;
+}
+
+#insertPorod tr
+{
+	height: 45px;
+}
+
+th
+{
+	border: 1px solid black;
+}
+
+#but
+{
+	background-color: #FFEBCD;
+	border-radius: 10px;
+	height: 35px;
+	width: auto;
+}
+
+#but2
+{
+	background-color: #FFEBCD;
+	border-radius: 10px;
+	height: 35px;
+	width: auto;
+}
+
+#but3
+{
+	background-color: #FFEBCD;
+	border-radius: 10px;
+	height: 35px;
+	width: auto;
+}

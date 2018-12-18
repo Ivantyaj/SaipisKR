@@ -1,0 +1,28 @@
+body{
+	padding-left: 10%;
+	padding-right: 10%;
+	background-image: url(../resource/bg.jpg);
+	background-size: 50%;
+}
+.bodyCat
+{
+	background-color: white;
+	opacity: 0.9;
+	color: black;
+	clear: both;
+	text-indent: 2em;
+	text-align: justify;
+}
+.videoD
+{
+	position: relative;
+	bottom: 10%;
+	width: 80%;
+	left: 10%;
+	padding-bottom: 2%;
+}
+.video
+{
+	position: relative;
+	left: 10%;
+}

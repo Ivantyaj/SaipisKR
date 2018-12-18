@@ -1,0 +1,28 @@
+#aboutCat
+{
+	padding: 5%;
+	font-family: Monotype Corsiva, Cursive;
+	width: auto;
+	font-size: 20px;
+	padding-bottom: 2%;
+}
+
+#zag
+{
+	position: relative;
+	font-family: Andale Mono, monospace;
+	top: 0px;
+	padding:0px;
+	margin: 0px;
+	color: #337ab7;
+}
+
+#aboutHistory
+{
+	padding: 5%;
+	padding-left: 0;
+	font-family: Monotype Corsiva, Cursive;
+	width: auto;
+	font-size: 20px;
+	padding-bottom: 2%;
+}

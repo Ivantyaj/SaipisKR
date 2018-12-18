@@ -1,0 +1,13 @@
+table img:hover {
+	position: relative;
+	transform: scale(1.5);
+	z-index: 9999;
+}
+
+
+p{
+	color: #000000;
+	padding-top: 10px;
+	font-family:Lobster, cursive;
+	Font-size:28px;
+}
