@@ -32,7 +32,7 @@ MongoClient.connect('mongodb://localhost:27017/mydatabase', function (err, datab
     })
 })
 
-function addAtr() {
+function addAtr() {  //TODO: add element dhml
     if (userFlag == 0) {
         menu1 = '';
         menu2 = '';
@@ -58,31 +58,49 @@ app.get('/', function (req, res) {
 app.get('/page2', function (req, res) {
     res.sendfile('index2.html');
 });
-
+//TODO: fix comments
 app.post('/auth', function (req, res) {
     var login = req.body.login;
     var pass = req.body.password;
-    console.log(login + " " + pass);
 
-    userFlag = 1;
-    db.collection('users').findOne({login: login, password: pass}, function (err, user) {
-        if (err) return res.sendStatus(500);
-        if (!user) {
-            db.collection('users').insertOne({login: login, password: pass}, function (err, user) {
-                if (err) return res.sendStatus(500);
+
+    if ("register" in req.body) {
+
+        console.log(login + " " + pass);
+
+        db.collection('users').findOne({login: login, password: pass}, function (err, user) {
+            if (err) return res.sendStatus(500);
+            if (!user) {
+                db.collection('users').insertOne({login: login, password: pass}, function (err, user) {
+                    if (err) return res.sendStatus(500);
+                    userFlag = 1;
+                    alert("Пользователь " + login + " зарегистрирован");
+                })
+            } else {
+                alert("У-у-у-у! Собака сутулая! Такое имя уже занято!!!!");
+            }
+        })
+    }
+    if ("enter" in req.body) {
+
+        db.collection('users').findOne({login: login, password: pass}, function (err, user) {
+            if (err) return res.sendStatus(500);
+            if (user) {
                 userFlag = 1;
-                alert("Пользователь " + login + " зарегистрирован");
-            })
-        }
-    })
+                addAtr();
+                res.render("index.html", {
+                    menu1: menu1,
+                    menu2: menu2,
+                    menu3: menu3
+                });
+                res.sendfile(__dirname + '/views/index.html');
+            } else {
+                alert("У-у-у-у! Собака сутулая! Зарегайся поначалу!!!!");
+            }
 
-    addAtr();
-    res.render("index.html", {
-        menu1: menu1,
-        menu2: menu2,
-        menu3: menu3
-    });
-    res.sendfile(__dirname + '/views/index.html');
+
+        })
+    }
 });
 
 app.get('/join', function (req, res) {
