@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="..\style\menuStyle.css">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="..\style\menuStyle.css">
     <script data-main="../js/app" src="../js/require.js"></script>
-	<link rel="stylesheet" type="text/css" href="..\style\logoStyle.css">
-	<link rel="stylesheet" type="text/css" href="..\style\footerStyle.css">
-	<link rel="stylesheet" type="text/css" href="..\style\bg.css">
+    <link rel="stylesheet" type="text/css" href="..\style\logoStyle.css">
+    <link rel="stylesheet" type="text/css" href="..\style\footerStyle.css">
+    <link rel="stylesheet" type="text/css" href="..\style\bg.css">
     <link rel="stylesheet" type="text/css" href="..\style\text.css">
     <link rel="stylesheet" type="text/css" href="..\style\tablePorod.css">
-	<link href="..\style\bootstrap.min.css" rel="stylesheet">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="..\style\bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 </head>
 <body>
 <header id="logo" style="padding-top: 15px">
     <p>Виды животных</p>
 </header>
 <div class="bodyCat">
-<div class="tableIns">
-<form>
-<table id="insertPorod">
-<tr>
-    <td>Название вида:</td> <td><input type="text" name="nameType" id="nameType"></td>
-    </tr>
-    <tr>
-    <td>Название породы животного:</td><td><input type="text" name="namePorod" id="namePorod"></td>
-     </tr>
-     <tr>
-    <td>Кличка:</td> <td><input type="text" name="name" id="name"></td>
-     </tr>
-     <tr>
-    <td>Возраст:</td><td><input type="text" name="age" id="age"></td>
-    </tr>
-    </table>
-   <br>
-</form>
-  <button name="insert" id="but">Добавить</button>
-  <button name="insert" id="but2">Показать</button>
-  <button name="insert" id="but3">Клонировать</button>
-<br>
-<br>
-<table id="porod">
-    <tr>
-        <th style="padding: 5px;">Название вида</th>
-        <th>Название породы животного</th>
-        <th>Кличка</th>
-        <th>Возраст</th>
-    </tr>
-</table>
-    <br>
-</div>
+    <div class="tableIns">
+        <form id="myForm">
+            <table id="insertPorod">
+                <tr>
+                    <td>Название вида:</td>
+                    <td><input type="text" name="nameType" id="nameType"></td>
+                </tr>
+                <tr>
+                    <td>Название породы животного:</td>
+                    <td><input type="text" name="namePorod" id="namePorod"></td>
+                </tr>
+                <tr>
+                    <td>Кличка:</td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Возраст:</td>
+                    <td><input type="text" name="age" id="age"></td>
+                </tr>
+            </table>
+            <br>
+        </form>
+        <button name="insert" id="but">Добавить</button>
+        <button name="insert" id="but2">Показать</button>
+        <button name="insert" id="but3">Клонировать</button>
+        <button name="insert" id="but4">Очистить</button>
+        <br>
+        <br>
+        <table id="porod">
+            <tr>
+                <th style="padding: 5px;">Название вида</th>
+                <th>Название породы животного</th>
+                <th>Кличка</th>
+                <th>Возраст</th>
+            </tr>
+        </table>
+        <br>
+    </div>
 </div>
 <footer><a href=..>Главная</a></footer>
 </body>
